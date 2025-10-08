@@ -9,7 +9,7 @@
 </head>
 <body>
   <header>
-    <img class="banner" src="https://i.postimg.cc/j5h3Kh4q/laufey-header.png" alt="Mi Imagen">
+    <img class="banner" src="https://i.postimg.cc/mD5B7GLc/laufey-header.png" alt="Mi Imagen">
   </header>
   <div>
       <nav class="links">
@@ -33,20 +33,38 @@
     </ul>
   </aside>
 
-  <section class="caja_0">
-    <h2 class="titulo">Bienvenido a esta FanPage</h2>
-    <div class="caja_contenido"> 
-      <div class="caja_1">
-        <h3>Biografía</h3>
-        <p>Laufey es una cantante, compositora y multiinstrumentista islandesa-china reconocida por fusionar géneros como el jazz clásico, la bossa nova y el pop orquestal. Su estilo elegante y atemporal le ha valido premios importantes como el Grammy a Best Traditional Pop Vocal Album.</p>
-        <p>Más allá de su música, Laufey ha compartido la importancia de su hermana gemela Junia en su vida personal y artística, mostrando la cercanía entre ambas. Un detalle curioso es la forma en que se pronuncia su nombre: en islandés se dice “Láu-vei” (similar a lau-vey), aunque entre los fans es común pronunciarlo tal como se lee en inglés o español, algo que se ha vuelto incluso una broma recurrente dentro de su comunidad.</p>
-      </div>
-      <div class="imagen_0">
-        <img src="https://cdn-3.expansion.mx/dims4/default/681a35d/2147483647/strip/true/crop/1200x1503+0+0/resize/1200x1503!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F1e%2F26%2Fbcc424f64623a1b1d107021fc292%2Flaufey-goddess-edition-lead-photo-pc-gemma-warren.jpg" alt="Laufey Imagen">
-      </div>
+<section class="caja_0 container my-5">
+  <h2 class="titulo text-center mb-4">Bienvenido a esta FanPage</h2>
+
+  <div class="row align-items-center caja_contenido">
+    <div class="col-md-6 caja_1">
+      <h3>Biografía</h3>
+      <p>
+        Laufey es una cantante, compositora y multiinstrumentista islandesa-china reconocida por fusionar géneros como el jazz clásico, la bossa nova y el pop orquestal. Su estilo elegante y atemporal le ha valido premios importantes como el Grammy a Best Traditional Pop Vocal Album.
+      </p>
+      <p>
+        Más allá de su música, Laufey ha compartido la importancia de su hermana gemela Junia en su vida personal y artística, mostrando la cercanía entre ambas. Un detalle curioso es la forma en que se pronuncia su nombre: en islandés se dice “Láu-vei” (similar a lau-vey), aunque entre los fans es común pronunciarlo tal como se lee en inglés o español, algo que se ha vuelto incluso una broma recurrente dentro de su comunidad.
+      </p>
     </div>
-  </section>
+
+    <div class="col-md-6 imagen_0 text-center">
+      <img 
+        src="https://cdn-3.expansion.mx/dims4/default/681a35d/2147483647/strip/true/crop/1200x1503+0+0/resize/1200x1503!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F1e%2F26%2Fbcc424f64623a1b1d107021fc292%2Flaufey-goddess-edition-lead-photo-pc-gemma-warren.jpg" 
+        alt="Laufey Imagen"
+        class="img-fluid rounded"
+        id= "imagenBiografia"
+        style="cursor:pointer;"
+      >
+    </div>
+  </div>
+</section>
 </div>
+
+<input type="text" id="buscarCancion" placeholder="Escribe el título de la canción">
+<button onclick="buscarCancion()">Buscar</button>
+
+<div id="resultados"></div>
+
 <section class="discografias">
   <h4>Discografías</h4>
   <div class="album-grid">
@@ -64,13 +82,23 @@
     </a>
   </div>
 </section>
+
+<section>
+  <h2>Playlist del día</h2>
+  <button id="btnGenerarPlaylist">Generar playlist del día</button>
+  <div id="playlistDelDia"></div>
+</section>
+
+
+
+<script src="script_0.js"></script>
 </body>
 
 <footer>
-  <p>Autor: José Effio</p>
-  <p><a href="mailto:jceffioa@unitru.edu.pe">jceffioa@unitru.edu.pe</a></p>
+  <p>Autores: José Effio , José Arancibia, Fabricio Roldan</p>
+
+  <div id="reloj" class="text-center my-2"></div>
+
 </footer>
 
 </html>
-
-

@@ -1,5 +1,5 @@
 html{
-  background-image: url(https://i.postimg.cc/HxS0BvtX/laufey-background.png);
+  background-image: url(https://i.postimg.cc/pX8Zcrk2/laufey-background.png);
 }
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap);
 
@@ -428,6 +428,59 @@ footer {
   }
 }
 
+body {
+  background: transparent !important;
+  background-image: url(https://i.postimg.cc/HxS0BvtX/laufey-background.png) !important;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#btnSubirArriba {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #000;  
+  color: #fff;             
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;          
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+#btnSubirArriba:hover {
+  background-color: #444;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+#btnGenerarPlaylist {
+  background-color: #1db954;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  margin: 10px 0;
+  font-size: 14px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#btnGenerarPlaylist:hover {
+  background-color: #169c44;
+}
+
+#playlistDelDia {
+  margin-top: 20px;
+}
 
 
 
